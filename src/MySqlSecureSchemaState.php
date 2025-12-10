@@ -1,6 +1,6 @@
 <?php
 
-namespace Milad\MySqlSecureSchemaState;
+namespace Milad\DBSecureSchemaState;
 
 use Illuminate\Database\Schema\MySqlSchemaState;
 

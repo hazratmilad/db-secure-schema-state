@@ -2,9 +2,9 @@
 
 namespace Milad\DBSecureSchemaState;
 
-use Illuminate\Database\MySqlConnection;
+use Illuminate\Database\PostgresConnection;
 
-class MySqlSecureConnection extends MySqlConnection
+class PostgresSecureConnection extends PostgresConnection
 {
     /**
      * Get the schema state for the connection.
@@ -15,7 +15,7 @@ class MySqlSecureConnection extends MySqlConnection
      */
     public function getSchemaState($files = null, callable $processFactory = null)
     {
-        return new MySqlSecureSchemaState(
+        return new PostgresSecureSchemaState(
             $this,
             $files,
             $processFactory
