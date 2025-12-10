@@ -10,8 +10,6 @@ class MySqlSecureSchemaState extends MySqlSchemaState
     {
         $value = ' --user="${:LARAVEL_LOAD_USER}" --password="${:LARAVEL_LOAD_PASSWORD}"';
 
-        dd('salam');
-
         $config = $this->connection->getConfig();
         $useSsl = $config['dump']['use_ssl'] ?? false;
         $verifyCert = $config['dump']['verify_server_cert'] ?? null;

@@ -15,8 +15,6 @@ class MySqlSecureConnection extends MySqlConnection
      */
     public function getSchemaState($files = null, callable $processFactory = null)
     {
-        dd('MySqlSecureConnection::getSchemaState called');
-
         return new MySqlSecureSchemaState(
             $this,
             $files,
