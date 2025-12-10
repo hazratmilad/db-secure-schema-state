@@ -1,8 +1,8 @@
-# MySQL Secure Schema State for Laravel
-### SSL-enabled, MySQL-enhanced schema dumps with MariaDB safety
+# DB Secure Schema State for Laravel
+### SSL-enabled, Postgres-enhanced and MySQL-enhanced schema dumps with MariaDB safety
 
-This package overrides Laravel's `MySqlSchemaState` to provide full SSL support when dumping
-MySQL schemas using `mysqldump`, while protecting MariaDB users from unsupported flags.
+This package overrides Laravel's `MySqlSchemaState` and `PostgresSchemaState` to provide full SSL support when dumping
+schemas, while protecting MariaDB users from unsupported flags.
 
 ## ✨ Features
 
@@ -15,4 +15,4 @@ MySQL schemas using `mysqldump`, while protecting MariaDB users from unsupported
 ## 📦 Installation
 
 ```bash
-composer require hazratmilad/mysql-secure-schema-state
+composer require hazratmilad/db-secure-schema-state
