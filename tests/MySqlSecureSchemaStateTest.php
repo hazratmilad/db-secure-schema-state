@@ -1,9 +1,9 @@
 <?php
 
-namespace Milad\MySqlSecureSchemaState\Tests;
+namespace Milad\DBSecureSchemaState\Tests;
 
 use Orchestra\Testbench\TestCase;
-use Milad\MySqlSecureSchemaState\MySqlSecureSchemaState;
+use Milad\DBSecureSchemaState\MySqlSecureSchemaState;
 use Illuminate\Database\Connection;
 
 class MySqlSecureSchemaStateTest extends TestCase
