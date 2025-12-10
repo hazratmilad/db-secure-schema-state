@@ -11,10 +11,12 @@ class MySqlSecureConnection extends MySqlConnection
      *
      * @param  \Illuminate\Filesystem\Filesystem|null  $files
      * @param  callable|null  $processFactory
-     * @return MySqlSecureSchemaState
+     * @return \Illuminate\Database\Schema\SchemaState
      */
-    public function getSchemaState($files = null, callable $processFactory = null): MySqlSecureSchemaState
+    public function getSchemaState($files = null, callable $processFactory = null)
     {
+        dd('MySqlSecureConnection::getSchemaState called');
+
         return new MySqlSecureSchemaState(
             $this,
             $files,
